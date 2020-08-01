@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/98/98406.svg">
+    <title>little bookshop of horrors</title>
+    
+<!--external css-->
+    <link rel="stylesheet" href="css/style.css">
+    
+<!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+<!--Bootstrap Javascript and JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+<!-- external javascript -->
+    <script src="index.js"></script>
+  </head>
+  
+  <body>
+    <nav class="navbar pt-5">
+      <a class="navbar-brand" href="#">
+        <h1 class="nav-text text-wrap text-center">
+          <img src="images/vampire-teeth.png" width="50" height="50" class="d-inline-block align-center" alt="vampire teeth logo">
+          little bookshop of horrors
+        </h1>
+      </a>
+    </nav>
+    
+    <button class="btn btn-dark btn-cart m-2 float-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img src="images/shopping-cart.png" alt="shopping cart" id="cart-img">
+    </button>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-lg-6 col-xl-4 dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+          <div class="container" id="shopping-cart">
+            <div class="row d-flex align-items-center">
+              <p id="cart-text">Your cart is empty</p>
+              <img class="dropdown-item" src="images/shopping-cart.png" alt="empty shopping cart" id=empty-cart-img>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-5">
+      <div class="row">
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="http://www.jacquelineabelson.com/uploads/2/1/0/2/21022616/published/f7c89e32800471-5694634b68ef3.png?1506096493" alt="dracula novel cover">
+          <h3 class="book-title">Dracula</h3>
+          <p class="author">by Bram Stoker</p>
+          <div class="buttons">
+            <p class="price">£5.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="5.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://cricklitfest.co.uk/wp-content/uploads/2018/07/frankenstein.jpg" alt="frankenstein novel cover">
+          <h3 class="book-title">Frankenstein</h3>
+          <p class="author">by Mary Shelley</p>
+          <div class="buttons">
+            <p class="price">£5.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="5.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://images.randomhouse.com/cover/9780735254091" alt="carmilla novel cover">
+          <h3 class="book-title">Carmilla</h3>
+          <p class="author">by Joseph Sheridan Le Fanu</p>
+          <div class="buttons">
+            <p class="price">£5.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="5.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/t/the-tell-tale-heart-and-other-tales/9780712357548_custom-709c7737245d374164435040f8de474b7615a072-s500-c85.jpg" alt="the tell tale heart novel cover">
+          <h3 class="book-title">The Tell Tale Heart</h3>
+          <p class="author">by Edgar Allan Poe</p>
+          <div class="buttons">
+            <p class="price">£7.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="7.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1486439303i/21914430._SY540_.png" alt="the turn of the screw novel cover">
+          <h3 class="book-title">The Turn of the Screw</h3>
+          <p class="author">by Henry James</p>
+          <div class="buttons">
+            <p class="price">£6.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="6.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/tmp_edit/daf77976b260a2ef32d6971cdfb04e6b/the-willows_custom-1d77c2b01ab9a247d4a629ccabf8d312679bb638-s500-c85.jpg" alt="the willows novel cover">
+          <h3 class="book-title">The Willows</h3>
+          <p class="author">by Algernon Blackwood</p>
+          <div class="buttons">
+            <p class="price">£5.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="5.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/t/the-werewolf-of-paris/9781605984575_custom-ae1bce894bb4cba3fdca04128fd2a55e4b5b244f-s500-c85.jpg" alt="The Werewolf of Paris novel cover">
+          <h3 class="book-title">The Werewolf of Paris</h3>
+          <p class="author">by Guy Endore</p>
+          <div class="buttons">
+            <p class="price">£8.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="8.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/t/the-hunger/9780735212510_custom-4f96da9404da283b55d32ea445e14a916c7f6876-s500-c85.jpg" alt="the hunger novel cover">
+          <h3 class="book-title">The Hunger</h3>
+          <p class="author">by Alma Katsu</p>
+          <div class="buttons">
+            <p class="price">£9.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="9.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div> 
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/b/bird-box/9780062259660_custom-5cf161ef093595bd419f4f177181af42762e4bd6-s500-c85.jpg" alt="bird box novel cover">
+          <h3 class="book-title">Bird Box</h3>
+          <p class="author">Josh Malerman</p>
+          <div class="buttons">
+            <p class="price">£9.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="9.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/t/the-girl-with-all-the-gifts/9780316278157_custom-4b6f6070cf9d45bd536b496e5b1bd53da6c2e780-s500-c85.jpg" alt="the girl with all the gifts novel cover">
+          <h3 class="book-title">The Girl with All the Gifts</h3>
+          <p class="author">by M. R. Carey</p>
+          <div class="buttons">
+            <p class="price">£10.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="10.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/tmp_edit/40706fb485ed21519ee23bee5357b006/the-fisherman_custom-8433a6d70abb8726f7f312ae072a87de2edc10d0-s500-c85.jpg" alt="the fisherman novel cover">
+          <h3 class="book-title">The Fisherman</h3>
+          <p class="author">by John Langan</p>
+          <div class="buttons">
+            <p class="price">£9.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="9.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/u/uzumaki/9781421561325_custom-794ddf8aadd6889b7f625b7197c5ec719394dba2-s500-c85.jpg" alt="Uzumaki novel cover">
+          <h3 class="book-title">Uzumaki</h3>
+          <p class="author">by Junji Ito</p>
+          <div class="buttons">
+            <p class="price">£10.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="10.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://i.pinimg.com/originals/06/d9/78/06d9780db84fb0f9126ba7bebb54a362.jpg" alt="The Haunting Of Hill House novel cover">
+          <h3 class="book-title">The Haunting Of Hill House</h3>
+          <p class="author">by Shirley Jackson</p>
+          <div class="buttons">
+            <p class="price">£6.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="6.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://preview.redd.it/n2us567cvx741.jpg?width=640&crop=smart&auto=webp&s=56c9232f8fe67b9d7d3e66d4f6a5537bd1c1de32" alt="the shining novel cover">
+          <h3 class="book-title">The Shining</h3>
+          <p class="author">by Stephen King</p>
+          <div class="buttons">
+            <p class="price">£7.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="7.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/t/the-elementals/9781941147177_custom-bcc185557ae240cab32ce6c1eb49d158f9937126-s500-c85.jpg" alt="the elementals novel cover">
+          <h3 class="book-title">The Elementals</h3>
+          <p class="author">by Michael McDowell</p>
+          <div class="buttons">
+            <p class="price">£8.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="8.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://images-na.ssl-images-amazon.com/images/I/61FkGjgw09L._SX324_BO1,204,203,200_.jpg" alt="the woman in black novel cover">
+          <h3 class="book-title">The Woman in Black</h3>
+          <p class="author">by Susan Hill</p>
+          <div class="buttons">
+            <p class="price">£6.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="6.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/l/lunar-park/9780375727276_custom-dc55c11aabf06aba08d7fb4cbf52ece840bbe44e-s500-c85.jpg" alt="lunar park novel cover">
+          <h3 class="book-title">Lunar Park</h3>
+          <p class="author">by Bret Easton Ellis</p>
+          <div class="buttons">
+            <p class="price">£11.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="11.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/tmp_edit/289ca619b657375234d2a02ec5011ef4/wyldinghall_custom-baa0753b3fac0d7711527365593d7d71e5e86c67-s500-c85.jpg" alt="Wylding Hall novel cover">
+          <h3 class="book-title">Wylding Hall</h3>
+          <p class="author">by Elizabeth Hand</p>
+          <div class="buttons">
+            <p class="price">£8.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="8.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/i/infidel/9781534308367_custom-5a4d08ad369f6c9ca868d989234a248cbd210aeb-s500-c85.jpg" alt="Infidel novel cover">
+          <h3 class="book-title">Infidel</h3>
+          <p class="author">by Aaron Campbell, Jose Villarrubia, Pornsak Pichetshote and Jeff Powell</p>
+          <div class="buttons">
+            <p class="price">£9.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="9.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/c/come-closer/9781616951009_custom-0d4130712998a4a497cb064a927182940eae1266-s500-c85.jpg" alt="Come Closer novel cover">
+          <h3 class="book-title">Come Closer</h3>
+          <p class="author">by Sara Gran</p>
+          <div class="buttons">
+            <p class="price">£8.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="8.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/t/the-bloody-chamber/9780143107613_custom-420d3608597df28eaa59ada6c8e4f24689dad767-s500-c85.jpg" alt="The Bloody Chamber novel cover">
+          <h3 class="book-title">The Bloody Chamber</h3>
+          <p class="author">by Angela Carter</p>
+          <div class="buttons">
+            <p class="price">£7.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="7.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/w/white-is-for-witching/9781594633072_custom-912e8f154334b5642b5b5e90ef12ccdab62b5b16-s500-c85.jpg" alt="White Is For Witching novel cover">
+          <h3 class="book-title">White Is For Witching</h3>
+          <p class="author">by Helen Oyeyemi</p>
+          <div class="buttons">
+            <p class="price">£6.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="6.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>  
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/tmp_edit/40706fb485ed21519ee23bee5357b006/Elizabeth1_custom-fb2991a571f7c0ebebce9c4e6bdee3d5d3413b57-s500-c85.jpg" alt="Elizabeth novel cover">
+          <h3 class="book-title">Elizabeth</h3>
+          <p class="author">by Ken Greenhall</p>
+          <div class="buttons">
+            <p class="price">£7.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="7.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+        <div class="item col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 rounded mt-5">
+          <img class="m-1 book-img" src="https://media.npr.org/assets/bakertaylor/covers/t/the-collector/9780316290234_custom-e33f64bd4f8141078343812d5d6fa34d052976e3-s500-c85.jpg" alt="The Collector novel cover">
+          <h3 class="book-title">The Collector</h3>
+          <p class="author">by John Fowles</p>
+          <div class="buttons">
+            <p class="price">£8.99</p>
+            <button class="btn btn-outline-danger btn-lg w-100 shadow m-1 btn-addToCart" value="8.99">Add to cart</button>
+            <button class="btn btn-outline-dark btn-lg w-100 shadow m-1 btn-preview">Preview</button>
+          </div>
+        </div>   
+      </div>
+    </div>
+    
+    <footer class="jumbotron text-white text-center mt-5 mb-0">
+      <p>¡sh! web designs</p>
+      <div><small>Icons made by <a class="footer-link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a class="footer-link" href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a class="footer-link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small></div>
+    </footer>
+  </body>
+</html>
