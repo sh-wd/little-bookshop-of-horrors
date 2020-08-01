@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Playfair+Display:ital@1&family=ZCOOL+XiaoWei&display=swap');
+
+.navbar {
+  background-color: #000 !important;
+}
+
+.nav-text {
+  font-family: 'Nosifer', cursive;
+  color: white;
+}
+
+.btn-cart {
+  background-color: #000 !important;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+#cart-img {
+  width: 30px;
+}
+
+.dropdown-menu {
+  background-color: #000 !important;
+}
+
+#cart-text {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#empty-cart-img {
+  width: 200px;
+}
+
+#empty-cart-img:hover {
+  background-color: #000;
+}
+
+.cart-book-cover {
+  width: 50px;
+  height: 80px;
+}
+
+.item {
+  height: 30rem;
+}
+
+.book-img {
+  width: 100px;
+  height: 160px;
+}
+
+.book-title {
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.author {
+  font-family: 'Playfair Display', serif;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+}
+
+footer {
+  background-color: #000 !important;
+}
+
+.footer-link,
+.footer-link:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 575px) {
+  .book-img {
+    width: 200px;
+    height: 320px;
+  }
+  
+  .item {
+    height: 36rem;
+  }
+}
